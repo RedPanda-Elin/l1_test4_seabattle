@@ -19,7 +19,6 @@ public class SeaBattle {
             field.show();
             int shoot = player.getShoot();
     } while();
-    // write some code or new function  
-
+        System.out.println("Hello");
 }
 }
