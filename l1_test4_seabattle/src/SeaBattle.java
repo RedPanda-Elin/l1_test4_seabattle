@@ -18,12 +18,8 @@ public class SeaBattle {
         do{
             field.show();
             int shoot = player.getShoot();
-            
-
-
-
     } while();
-
+    // write some code or new function  
 
 }
 }
