@@ -34,17 +34,17 @@ public class Field {
                 break;
             default:
                 System.out.println("Ошибка");
-
         }
     }
 
-    boolean isNotGameOver() {
-        return cells[ship.position] == 'X';
+
+    boolean isNotGameOver() { return cells[ship.position] == Player.getShoot();
+//        return cells[ship.position] == 'X';
     }
     void setShip(int position) {
         ship = new Ship();
         ship.position = position;
-        cells[position] = 'X';
+//        cells[position] = 'X';
     }
-
 }
+

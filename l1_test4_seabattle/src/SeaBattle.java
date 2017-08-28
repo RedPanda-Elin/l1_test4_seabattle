@@ -1,3 +1,4 @@
+import java.util.Random;
 import java.util.Scanner;
 
 /**
@@ -11,14 +12,19 @@ public class SeaBattle {
     static void doGame() {
         Field field = new Field();
         Player player = new Player();
+        Random random = new Random();
+
 
         field.init();
-        field.setShip(4);
+        field.setShip(random.nextInt(10)); //todo сделать случайной
 
         do{
             field.show();
             int shoot = player.getShoot();
-    } while();
-        System.out.println("Hello");
+            field.doShoot(shoot);
+    } while(field.isNotGameOver());
+        System.out.println("Game Over");
 }
 }
+
+// todo скрыть отображение корабля

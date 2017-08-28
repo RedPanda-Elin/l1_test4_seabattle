@@ -4,7 +4,7 @@ import java.util.Scanner;
  * Created by Elin on 25.08.2017.
  */
 public class Player {
-    String name;
+//    String name;
 
     int getShoot() {
         int shoot;
@@ -22,4 +22,5 @@ public class Player {
         System.out.println("x: " + shoot);
         return shoot;
     }
+
 }
