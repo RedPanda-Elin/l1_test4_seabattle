@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Player {
 //    String name;
 
-    int getShoot() {
+    static int getShoot() {
         int shoot;
         Scanner scanner = new Scanner(System.in);// BufferedReader
         do {
