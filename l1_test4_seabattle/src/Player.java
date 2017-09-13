@@ -4,8 +4,6 @@ import java.util.Scanner;
  * Created by Elin on 25.08.2017.
  */
 public class Player {
-//    String name;
-
     static int getShoot() {
         int shoot;
         Scanner scanner = new Scanner(System.in);// BufferedReader
@@ -16,7 +14,6 @@ public class Player {
             } else {
                 System.out.println("введите все же именно число, пожалуйста");
                 scanner.nextLine(); // выбросили то, что там было написано
-
             }
         } while (true);
         System.out.println("x: " + shoot);
