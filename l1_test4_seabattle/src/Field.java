@@ -40,6 +40,7 @@ public class Field {
     }
 
 
+
     boolean isNotGameOver(int x) {
         boolean result;
         if (cells[ship.position] == x) {
@@ -50,6 +51,7 @@ public class Field {
 
         return result;
     }
+
 
     void setShip(int position) {
         ship = new Ship();

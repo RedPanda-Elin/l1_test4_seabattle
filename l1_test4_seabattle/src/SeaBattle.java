@@ -26,8 +26,6 @@ public class SeaBattle {
             field.doShoot(shoot);
         } while (!field.isNotGameOver(shoot));
 
-        System.out.println("Game Over");
-    }
 }
 
 // todo скрыть отображение корабля
