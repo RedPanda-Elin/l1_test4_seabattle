@@ -10,6 +10,7 @@ public class SeaBattle {
     }
 
     static void doGame() {
+        int shoot;
         Field field = new Field();
         Player player = new Player();
         Random random = new Random();
@@ -18,17 +19,13 @@ public class SeaBattle {
         field.init();
         field.setShip(random.nextInt(10)); //todo сделать случайной
 
-        int shoot;
-        do{
+
+        do {
             field.show();
             shoot = player.getShoot();
             field.doShoot(shoot);
-    }
+        } while (!field.isNotGameOver(shoot));
 
-    while(field.isNotGameOver(shoot) == false);
-        System.out.println(field.isNotGameOver(shoot));
-        System.out.println("Game Over");
-}
 }
 
 // todo скрыть отображение корабля
