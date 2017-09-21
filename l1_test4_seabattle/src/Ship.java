@@ -6,5 +6,4 @@
 public class Ship {
     int position;
 
-
 }

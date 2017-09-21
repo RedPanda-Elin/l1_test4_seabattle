@@ -41,7 +41,16 @@ public class Field {
 
 
     boolean isNotGameOver(int x) {
-        return cells[ship.position] == x;   }
+        boolean result;
+        if (cells[ship.position] == x) {
+            result = true;
+        } else {
+            result = false;
+        }
+
+        return result;
+    }
+
     void setShip(int position) {
         ship = new Ship();
         ship.position = position;
