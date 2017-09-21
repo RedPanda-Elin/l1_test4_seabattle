@@ -7,6 +7,7 @@ public class Field {
     Ship ship;
 
     void init() {
+
         for (int i = 0; i < cells.length; i++) {
             cells[i] = '.';
         }
@@ -23,6 +24,7 @@ public class Field {
             case '.':
                 System.out.println("Мимо");
                 cells[shoot] = '*';
+                System.out.println(cells);
                 break;
             case '*':
                 System.out.println("Уже стреляли");
@@ -38,8 +40,8 @@ public class Field {
     }
 
 
-    boolean isNotGameOver() { return cells[ship.position] == Player.getShoot();
-   }
+    boolean isNotGameOver(int x) {
+        return cells[ship.position] == x;   }
     void setShip(int position) {
         ship = new Ship();
         ship.position = position;

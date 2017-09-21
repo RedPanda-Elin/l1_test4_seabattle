@@ -18,11 +18,15 @@ public class SeaBattle {
         field.init();
         field.setShip(random.nextInt(10)); //todo сделать случайной
 
+        int shoot;
         do{
             field.show();
-            int shoot = player.getShoot();
+            shoot = player.getShoot();
             field.doShoot(shoot);
-    } while(field.isNotGameOver());
+    }
+
+    while(field.isNotGameOver(shoot));
+        System.out.println(field.isNotGameOver(shoot));
         System.out.println("Game Over");
 }
 }
