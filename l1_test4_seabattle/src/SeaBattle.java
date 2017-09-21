@@ -25,7 +25,7 @@ public class SeaBattle {
             field.doShoot(shoot);
     }
 
-    while(field.isNotGameOver(shoot));
+    while(field.isNotGameOver(shoot) == false);
         System.out.println(field.isNotGameOver(shoot));
         System.out.println("Game Over");
 }

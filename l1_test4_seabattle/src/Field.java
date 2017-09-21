@@ -40,8 +40,10 @@ public class Field {
     }
 
 
-    boolean isNotGameOver(int x) {
-        return cells[ship.position] == x;   }
+    boolean isNotGameOver(int x) { return cells[ship.position] == x;   }
+
+
+
     void setShip(int position) {
         ship = new Ship();
         ship.position = position;
