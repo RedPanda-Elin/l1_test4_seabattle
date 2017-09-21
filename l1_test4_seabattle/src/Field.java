@@ -24,8 +24,7 @@ public class Field {
             case '.':
                 System.out.println("Мимо");
                 cells[shoot] = '*';
-                System.out.println(cells);
-                break;
+                            break;
             case '*':
                 System.out.println("Уже стреляли");
                 break;
@@ -41,7 +40,9 @@ public class Field {
 
 
     boolean isNotGameOver(int x) {
-        return cells[ship.position] == x;   }
+        return ship.position == x;   }
+
+
     void setShip(int position) {
         ship = new Ship();
         ship.position = position;

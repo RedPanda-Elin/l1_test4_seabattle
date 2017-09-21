@@ -8,7 +8,7 @@ public class Player {
         int shoot;
         Scanner scanner = new Scanner(System.in);// BufferedReader
         do {
-            if (scanner.hasNextInt()){
+            if (scanner.hasNextInt()) {
                 shoot = scanner.nextInt();
                 break;
             } else {
