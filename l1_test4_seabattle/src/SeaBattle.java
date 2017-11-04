@@ -1,5 +1,4 @@
 import java.util.Random;
-import java.util.Scanner;
 
 /**
  * Created by Elin on 22.08.2017.
@@ -16,19 +15,21 @@ public class SeaBattle {
 
 
         field.init();
-        field.setShip(random.nextInt(10)); //todo сделать случайной
+        field.setShip();
+
+//        field.setShip(random.nextInt(10)); //todo сделать случайной
 
         int shoot;
-        do{
+        do {
             field.show();
             shoot = player.getShoot();
             field.doShoot(shoot);
-    }
+        }
 
-    while(!field.isNotGameOver(shoot));
+        while (!field.isNotGameOver());
 //        System.out.println(field.isNotGameOver(shoot));
         System.out.println("Game Over");
-}
+    }
 }
 
 // todo скрыть отображение корабля
