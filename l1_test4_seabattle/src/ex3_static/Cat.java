@@ -6,8 +6,8 @@ package ex3_static;
 public class Cat {
     String name;
     int age;
-    int count;
-    int sace;
+    static int count;
+
 
     Cat() {
         System.out.println("Cat()");
