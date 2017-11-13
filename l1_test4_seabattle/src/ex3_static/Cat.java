@@ -8,6 +8,10 @@ public class Cat {
     int age;
     static int count;
 
+//    static {
+//        count = 1000; // если статик то будет вызываться только 1 раз при первом упоминании класса, если просто блок инициа
+//    }
+
 
     Cat() {
         System.out.println("Cat()");
@@ -15,4 +19,9 @@ public class Cat {
 
     }
 
+    @Override
+    protected void finalize() throws Throwable {
+        super.finalize();
+        System.out.println("dead");
+    }
 }
