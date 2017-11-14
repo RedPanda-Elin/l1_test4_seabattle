@@ -5,11 +5,17 @@ package ex3_static;
  */
 public class Main {
     public static void main(String[] args) {
-        System.out.println(Cat.count);
-        Cat cat = new Cat();
-        Cat cat2 = new Cat();
-        Cat cat3 = new Cat();
-        System.out.println(Cat.count);
+        Cat.showCatsCount();
+//        System.out.println(Cat.count);
+        Cat cat = new Cat("Murka");
+        Cat cat2 = new Cat("Murka");
+        Cat cat3 = new Cat("Murka");
+//        System.out.println(Cat.count);
+
+        Cat.showCatsCount();
+//        Home home = new Home();
+//        home.createCat();
+//        System.out.println(Home.cat);
 
     }
 }

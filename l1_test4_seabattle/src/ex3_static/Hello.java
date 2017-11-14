@@ -5,10 +5,10 @@ package ex3_static;
  */
 public class Hello {
     public static void main(String[] args) {
-        new Cat();
-        new Cat();
-        new Cat();
-        new Cat();
+        new Cat("Murka");
+        new Cat("Murka");
+        new Cat("Murka");
+        new Cat("Murka");
         System.out.println("кошек: " + Cat.count);
     }
 }
