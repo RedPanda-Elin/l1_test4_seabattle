@@ -5,6 +5,7 @@ package ex3_static;
  */
 public class Main2 {
     public static void main(String[] args) {
+        Cat.showPlate();
         Cat cat1 = new Cat("Tom"); // в миску положили 100 еды
         Cat cat2 = new Cat("Kitty");
         Cat cat3 = new Cat("Murka");
@@ -14,7 +15,8 @@ public class Main2 {
         cat2.eat();
         cat2.eat();
         cat3.eat();
-
         cat1.eat();
+
+        Cat.showPlate();
     }
 }

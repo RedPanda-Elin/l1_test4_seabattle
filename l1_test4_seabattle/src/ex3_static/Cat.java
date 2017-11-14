@@ -29,4 +29,8 @@ public class Cat {
         plate--;
         System.out.println("name "+ name + " plate: " + plate);
     }
+    static void showPlate() {
+        System.out.println("Еды в миске осталось: " + plate);
+
+    }
 }
