@@ -14,8 +14,12 @@ public class Main2 {
         cat2.eat();
         cat2.eat();
         cat2.eat();
+        Cat.showPlate();
         cat3.eat();
         cat1.eat();
+
+        Cat cat4 = Cat.getRandomCat();
+        cat4.eat();
 
         Cat.showPlate();
     }

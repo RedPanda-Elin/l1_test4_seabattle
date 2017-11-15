@@ -33,4 +33,8 @@ public class Cat {
         System.out.println("Еды в миске осталось: " + plate);
 
     }
+
+    static Cat getRandomCat() {
+        return new Cat("Котяшечко");
+    }
 }
