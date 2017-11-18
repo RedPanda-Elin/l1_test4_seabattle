@@ -16,7 +16,7 @@ public class Cat {
 
 
 //    public boolean equals(Object obj) {
-//        Cat cat = (Cat)obj;
+//        Animal cat = (Animal)obj;
 //        return Objects.equals(name, cat.name);
 //
 //    }

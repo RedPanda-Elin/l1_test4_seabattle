@@ -17,7 +17,7 @@ public class Cat {
 
     Cat(String name) {
         this.name = name;
-        System.out.println("Cat()");
+        System.out.println("Animal()");
         count++;
     }
 
