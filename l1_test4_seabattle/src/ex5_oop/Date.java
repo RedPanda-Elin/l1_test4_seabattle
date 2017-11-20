@@ -8,6 +8,10 @@ public class Date {
     private int month;
     private int year;
 
+    public Date() {
+
+    }
+
 
 
     public int getDay() {

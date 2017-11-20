@@ -11,4 +11,9 @@ public class Crocodile extends Animal {
     public Crocodile() {
 
     }
+
+    @Override
+    void move() {
+        System.out.println("крокодил летает, но очень низко");
+    }
 }
